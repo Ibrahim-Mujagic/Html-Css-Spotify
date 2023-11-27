@@ -6,6 +6,68 @@
   }
   /* FINE MAIN */
 
+  footer{
+    justify-content: space-between;
+  }
+
+  footer .data-song{
+    gap: 0px 5px;
+    min-width: 200px;
+  }
+
+  footer .data-song .image{
+    height: 60px;
+  }
+
+  footer .data-song .title-subtitle-song p{
+    font-size: 0.8rem;
+  }
+
+  footer .data-song .icons{
+    font-size: 0.9rem;
+  }
+
+  footer .loader-song{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .loader-song .control-song{
+    font-size: 0.9rem;
+  }
+
+  footer .loader-song .control-song i:nth-child(3){
+    font-size: 1.3rem;
+  }
+
+  footer .loader-song .loader{
+    width: 80%;
+    min-width: 200px;
+
+  }
+
+  footer .loader-song .loader .track{
+    width: 100%;
+  }
+
+  footer .settings-sound{
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .settings-sound .icons{
+    height: 50%;
+  }
+
+  footer .settings-sound .icons i{
+    font-size: 0.8rem;
+  }
+
+  footer .settings-sound .loader-volume{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width:568px){
@@ -71,4 +133,10 @@
   }
   /* FINE MAIN */
 
+}
+
+@media screen and (max-width:468px){
+  footer .settings-sound .loader-volume{
+    display: none;
+  }
 }
