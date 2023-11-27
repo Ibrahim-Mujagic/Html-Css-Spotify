@@ -1,0 +1,8 @@
+:root{
+  --main-black: rgba(0,0,0,1);
+  --main-blue: rgba(20,25,34,1);
+  --dark-blue: rgba(8,11,18,1);
+  --p-gray: rgba(122,125,129,1);
+  --main-green: rgba(178,255,52,1);
+  --footer-bg: rgba(40,40,40,1);
+}
