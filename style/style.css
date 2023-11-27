@@ -163,14 +163,140 @@ aside .aside-bottom .user i{
   margin-right: 8px;
 }
 
+/* FINE ASIDE */
+
 main{
   width: calc(75% + 100px);
   height: 100%;
+  overflow-y: scroll;
 }
 
+main header{
+  height: 100px;
+  width: 100%;
+  background-color: var(--dark-blue);
+  padding: 0px 15px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main header button{
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+/* FINE HEADER */
+
+main nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+main nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px 15px;
+  flex-wrap: wrap;
+}
+
+main nav ul li a{
+  color: var(--p-gray);
+  text-decoration: none;
+}
+
+main nav ul li a.active::after {
+  display: block;
+  clear: both;
+  content : "";
+  position: relative;
+  left: 0;
+  bottom : 0;
+  max-width:250px;
+  height : 10px;
+  width : 40px; 
+  border-bottom:1px solid var(--main-green);
+  margin: 0 auto;
+}
+/* FINE NAV */
+
+main .cont-section{
+  padding: 10px 20px;
+}
+
+main .cont-section h3{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: default;
+}
+main .cont-section p{
+  color: var(--p-gray);
+  cursor: default;
+}
+
+main .cont-section .cont-cards{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+
+main .cont-section .cont-cards .card{
+  height: 250px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+main .cont-section .cont-cards .card .image{
+  height: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main .cont-section .cont-cards .card .image i{
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 1.9rem;
+  display: none;
+}
+
+main .cont-cards .card:hover .image i{
+  display: block;
+}
+
+main .cont-section .cont-cards .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main .cont-section .cont-cards .card .title-subtitle{
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 5px;
+  
+}
+
+main .cont-section .cont-cards.populars .image img{
+  border-radius: 50%;
+}
+  /* FINE MAIN */
 
 
 footer{
   height: 80px;
   background-color: var(--footer-bg);
+
 }
